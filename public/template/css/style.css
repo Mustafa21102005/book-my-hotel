@@ -1,0 +1,2827 @@
+/*==========================================
+      MASTER STYLESHEET FOR Bellevue
+==========================================*/
+
+/* Created by Bellevue Theme */
+
+body {
+    font-family: "Trirong", serif;
+    color: #1c1715;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+    overflow-x: hidden !important;
+}
+
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 62px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 54px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 41px;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 39px;
+}
+
+h5 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #1c1715;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: #1c171570;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+p {
+    color: #1c1715;
+    margin-bottom: 10px;
+}
+
+p.thmv-p-light {
+    color: #1c1715;
+    opacity: 0.5;
+}
+
+.thmv-paragraph p:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    background: transparent;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input,
+textarea {
+    font-family: "Trirong", sans-serif;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus,
+.form-select:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.clear_fix {
+    clear: both;
+}
+
+.clear_fix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+/*====== Background Color ======*/
+.thmv-bg-dark {
+    background: #181818;
+}
+
+.thmv-bg-glass {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+}
+
+/*====== Read More Button Style ======*/
+.read-more-btn {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    transition: all 0.3s;
+}
+
+.read-more-btn:hover {
+    opacity: 0.7;
+}
+
+.read-more-btn i {
+    font-size: 12px;
+    margin-left: 6px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.read-more-btn:hover i {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+    opacity: 0.9;
+}
+
+/*====== Button Style ======*/
+.btn-outline,
+.btn-outline-light,
+.btn-full-filled,
+.btn-full-filled-light {
+    color: #1c1715;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #1c1715;
+    min-width: 173px;
+    padding: 13px 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-outline:hover {
+    background: #1c1715;
+    color: #ffffff;
+}
+
+.btn-full-filled {
+    background: #1c1715;
+    color: #ffffff;
+    border-color: #1c1715;
+}
+
+.btn-full-filled:hover {
+    background: transparent;
+    color: #1c1715;
+    border-color: #1c1715;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    color: #1c1715;
+    background: #ffffff;
+}
+
+.btn-full-filled-light {
+    background: #ffffff;
+    color: #1c1715;
+    border-color: #ffffff;
+}
+
+.btn-full-filled-light:hover {
+    background: #1c1715;
+    color: #ffffff;
+    border-color: #1c1715;
+}
+
+/*====== Section Title Effects ======*/
+.thmv-title-effect,
+.thmv-title-effect-center,
+.thmv-title-effect-right,
+.thmv-title-effect-light,
+.thmv-title-effect-light-center,
+.thmv-title-effect-light-right {
+    position: relative;
+    display: inline-block;
+}
+
+.thmv-title-effect::before,
+.thmv-title-effect-center::before,
+.thmv-title-effect-right::before,
+.thmv-title-effect-light::before,
+.thmv-title-effect-light-center::before,
+.thmv-title-effect-light-right::before {
+    content: "";
+    background-image: url("../images/title-effects-dark.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 75px;
+    display: inline-block;
+    position: absolute;
+    top: -100%;
+    transform: translate(-0%, -60%);
+}
+
+.thmv-title-effect-light::before,
+.thmv-title-effect-light-center::before,
+.thmv-title-effect-light-right::before {
+    content: "";
+    background-image: url("../images/title-effects-light.svg");
+}
+
+.thmv-title-effect-center::before,
+.thmv-title-effect-light-center::before {
+    left: 50%;
+    transform: translate(-100%, -60%);
+}
+
+.thmv-title-effect-right::before,
+.thmv-title-effect-light-right::before {
+    right: 0%;
+    transform: translate(-0%, -60%);
+}
+
+/* Image Hover Grayscale */
+.thmv-img-gray-hover img:hover {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/*=============================================
+    =         Header Section Styles            =
+    =============================================*/
+.thmv-top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar_top {
+    position: relative;
+}
+
+.navbar-toggler-icon {
+    width: auto;
+    height: 30px;
+}
+
+.navbar-toggler-icon i {
+    color: #1c1715;
+    font-size: 30px;
+}
+
+.thmv-navbar-light {
+    padding: 20px 0px;
+    background: #ffffff;
+    border-bottom: 1px solid #ebecef;
+    transition: all 0.3s;
+}
+
+.thmv-navbar-light .navbar-brand {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.thmv-navbar-light .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.thmv-menu-drop .form-select {
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    color: #1c1715;
+    font-weight: 600;
+    background-image: none;
+    padding: 0 20px 0 0;
+    max-width: 70px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.thmv-menu-drop {
+    position: relative;
+}
+
+.thmv-menu-drop:before {
+    content: "\f0d7";
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 10px;
+    height: 5px;
+    transform: translate(10px, -50%);
+    pointer-events: none;
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    font-weight: 900;
+    color: #1c1715;
+}
+
+.thmv-menu-drop .form-select option {
+    color: #1c1715;
+    width: 150px;
+}
+
+.thmv-menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-menu-left li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.thmv-menu-left li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 22px;
+    width: 1px;
+    top: 50%;
+    right: 0;
+    transform: translate(0px, -50%);
+}
+
+.thmv-menu-left,
+.thmv-right-menu {
+    min-width: 350px;
+}
+
+.thmv-right-menu .thmv-social,
+.thmv-footer-social .thmv-social {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-right-menu .thmv-social li,
+.thmv-footer-social .thmv-social li {
+    padding: 0px 20px;
+    position: relative;
+}
+
+.thmv-right-menu .thmv-social li::after,
+.thmv-footer-social .thmv-social li::after {
+    content: "";
+    background: #1c1715;
+    width: 1px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.1;
+}
+
+.thmv-right-menu .thmv-social li:last-child::after,
+.thmv-footer-social .thmv-social li:last-child::after {
+    display: none;
+}
+
+.thmv-right-menu .thmv-social li i,
+.thmv-footer-social .thmv-social li i {
+    font-size: 18px;
+}
+
+.thmv-right-menu .btn-outline {
+    margin-left: 15px;
+}
+
+.thmv-navbar-light.fixed-top .navbar-brand {
+    color: #1c1715;
+    text-transform: uppercase;
+}
+
+.thmv-navbar-light.fixed-top .nav-link {
+    color: #1c1715;
+}
+
+.thmv-offcanvas-header {
+    display: flex;
+    align-items: center;
+    padding: 35px 40px;
+}
+
+.thmv-offcanvas-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.thmv-menu-officon {
+    font-size: 30px;
+}
+
+.thmv-offcanvas-body {
+    padding: 0;
+    max-height: 480px;
+}
+
+.thmv-leftside-menu li a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    display: block;
+    position: relative;
+    padding: 15px 40px;
+}
+
+.thmv-leftside-menu li a:hover {
+    color: #1c1715;
+}
+
+.thmv-leftside-menu li a:after {
+    content: "";
+    background: #1c1715;
+    width: 26px;
+    height: 8px;
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.thmv-leftside-menu li a:hover:after,
+.thmv-leftside-menu li .active:after {
+    left: 0;
+    opacity: 1;
+}
+
+.thmv-leftmenu-option {
+    position: absolute;
+    background: #1c1715;
+    width: 100%;
+    bottom: 0;
+    padding: 35px 40px;
+}
+
+.thmv-select-label {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.32;
+    padding-bottom: 5px;
+}
+
+.thmv-offcanvas-menu-drop {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.thmv-offcanvas-menu-drop .form-select {
+    background-color: #1c1715;
+    background-image: url("../images/en-down-arrow.png");
+    border: none;
+    color: #ffffff;
+    padding: 0;
+    font-weight: 600;
+    position: relative;
+    background-size: 12px 7px;
+}
+
+#cd-lateral-nav .sub-menu {
+    padding: 0 10px 20px 15px;
+    display: none;
+}
+
+#cd-lateral-nav.lateral-menu-is-open {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-overflow-scrolling: touch;
+}
+
+#cd-lateral-nav .item-has-children > a {
+    position: relative;
+    font-weight: 600;
+}
+
+#cd-lateral-nav .item-has-children {
+    position: relative;
+}
+
+#cd-lateral-nav .item-has-children::after {
+    content: "\f0d7";
+    position: absolute;
+    right: 10%;
+    top: 25px;
+    width: 10px;
+    transform: translate(10px, -50%);
+    pointer-events: none;
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    font-weight: 900;
+    color: #1c1715;
+}
+
+.item-has-children .sub-menu > li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-has-children .sub-menu a {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.item-has-children .sub-menu a:hover,
+.item-has-children .sub-menu a.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/*=====  End of Header Section Styles  ======*/
+
+/*=============================================
+    =            Main Banner Section Styles            =
+    =============================================*/
+.thmv-main-banner {
+    background: url("../images/top-header-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 820px;
+    display: flex;
+    align-items: center;
+}
+
+.thmv-banner-title {
+    min-height: 533px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-left: 10px solid #1c1715;
+    padding: 30px 90px;
+}
+
+.thmv-banner-title h1 {
+    color: #1c1715;
+    max-width: 700px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.thmv-banner-title p {
+    color: #1c1715;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 15px;
+}
+
+.thmv-banner-title a {
+    margin-top: 30px;
+    width: 124px;
+}
+
+/*=====  End Of Main Banner Section Styles  ======*/
+
+/*=============================================
+    =          Search Box Section Style            =
+    =============================================*/
+.thmv-tour-row {
+    background: #ffffff;
+    margin: 20px auto;
+    align-items: flex-end;
+}
+
+.thmv-date-col,
+.thmv-guest-col {
+    width: auto;
+}
+
+.thmv-guest-col .dropdown-toggle::after {
+    display: none;
+}
+
+.thmv-check-form .form-control {
+    padding: 10px 20px;
+    border: none;
+    font-weight: 400;
+    line-height: 21px;
+    color: #212529;
+}
+
+.thmv-check-form .form-control::placeholder {
+    color: #212529;
+}
+
+.thmv-guest-col .render {
+    padding: 13px 15px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.thmv-tour-search {
+    width: 100%;
+    min-width: 150px;
+    margin-left: auto;
+}
+
+.thmv-tour-row .form-group {
+    display: flex;
+    border: 1px solid #1c1715;
+    width: 230px;
+    height: 50px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.thmv-check-form .form-group i,
+.form-select-guests .form-content .render i {
+    color: #1c1715;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.thmv-tour-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.thmv-search-form-tour .border-right {
+    position: relative;
+}
+
+.thmv-search-form-tour .border-right:after {
+    content: "";
+    background: #1c1715;
+    width: 1px;
+    height: 46px;
+    position: absolute;
+    right: 0px;
+    opacity: 0.1;
+    top: 30px;
+    transform: translate(0px, -50%);
+}
+
+.thmv-promo-box {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.thmv-peoples-icon {
+    margin-left: 20px;
+}
+
+/*----------  Guests Dropdown Design   ----------*/
+.form-select-guests .dropdown-menu {
+    min-width: 228px;
+    z-index: 2;
+    padding: 10px;
+    border: 1px solid #1c171550;
+    border-radius: 0;
+    margin-left: 0px;
+    transform: translate3d(0px, 50px, 0px) !important;
+}
+
+.form-select-guests .dropdown-item-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-select-guests .dropdown-item-row .label {
+    color: #1c1715;
+    font-weight: 500;
+}
+
+.form-select-guests .btn-add,
+.form-select-guests .btn-minus {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    background: #eef1f7;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-select-guests .count-display {
+    width: 30px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+/*----------  Datepicker Design  ----------*/
+.datepick {
+    font-family: "Trirong", sans-serif;
+    font-size: 18px;
+    border: 2px solid rgb(28 23 21 / 20%);
+    width: 355px !important;
+    border-radius: 0;
+}
+
+.datepick-nav,
+.datepick-ctrl {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datepick a {
+    color: #1c1715;
+    padding: 0;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.datepick-month {
+    border: none;
+    width: 100%;
+}
+
+.datepick-month th,
+.datepick-month th a {
+    background-color: #ffffff;
+    color: #1c1715;
+    font-weight: 600;
+    border: none;
+}
+
+.datepick-month-header,
+.datepick-month-header select,
+.datepick-month-header input {
+    background-color: #ffffff;
+    color: #1c1715;
+    height: 34px;
+}
+
+.datepick-cmd-prev,
+.datepick-cmd-next {
+    font-size: 0;
+    position: relative;
+}
+
+.datepick-cmd-prev:after,
+.datepick-cmd-next:after {
+    content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    background: #1c1715;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.datepick-cmd-next:after {
+    content: "\f061";
+}
+
+.datepick-month td {
+    background-color: #ffffff;
+    border: none;
+}
+
+.datepick-month td .datepick-weekend {
+    background-color: #ffffff;
+}
+
+.datepick-month td .datepick-selected {
+    background-color: #1c1715;
+    color: #ffffff;
+    border: 1px solid #1c1715;
+    font-weight: 700;
+}
+
+.datepick-month td .datepick-highlight {
+    background-color: rgb(28 23 21 / 20%);
+}
+
+.datepick-ctrl {
+    justify-content: flex-end;
+}
+
+.datepick-ctrl .datepick-cmd {
+    background: #1c1715;
+    color: #ffffff;
+    width: auto;
+    margin-left: 15px;
+    padding: 0 10px;
+}
+
+.datepick-popup .datepick-nav .datepick-cmd-today,
+.datepick-popup .datepick-nav .datepick-cmd:hover,
+.datepick-cmd:hover {
+    background: transparent;
+}
+
+/*=====  End of Search Box Section Style  ======*/
+
+/*=============================================
+    =         Facilities Section Styles            =
+    =============================================*/
+.thmv-facilities-sec {
+    padding: 150px 10px;
+}
+
+.thmv-facilities-sec .thmv-facilities-info {
+    margin-top: 30px;
+}
+
+.thmv-facilities-sec .thmv-facilities-info h5 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.thmv-facilities-sec .thmv-facilities-info p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+/*=====  End Of Facilities Section Styles  ======*/
+
+/*=============================================
+    =            Our Hotel Sectin Style            =
+    =============================================*/
+.thmv-our-hotel {
+    padding: 100px 10px 0px;
+}
+
+.thmv-our-hotel .thmv-hotel-info {
+    padding-bottom: 50px;
+}
+
+.thmv-our-hotel .thmv-hotel-info p,
+.thmv-our-service .thmv-service-info p,
+.thmv-nearby .thmv-nearby-text p,
+.thmv-review-sec .thmv-review-info p,
+.thmv-instagram-feed .thmv-insta-feed-info p {
+    padding: 30px 0 20px;
+    margin-bottom: 0;
+}
+
+/*----------  Center Slider Style  ----------*/
+.thmv-slick-img-slider .slick-list {
+    padding: 0 28% !important;
+}
+
+.slider {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-dots li button::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    font-size: 8px;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+    font-weight: 600;
+}
+
+.thmv-our-hotel .slick-image-center.slick-dotted.slick-slider {
+    margin: 0 !important;
+}
+
+.thmv-our-hotel .slick-image-center .slick-dots {
+    display: none !important;
+}
+
+/*=====  End Of Our Hotel Sectin Style  ======*/
+
+/*=============================================
+    =      Welcome To Paradise Section Style         =
+    =============================================*/
+.thmv-welcome-sec {
+    padding: 150px 10px;
+    margin-bottom: 50px;
+}
+
+.thmv-wel-text h2 {
+    font-size: 52px;
+    line-height: 67px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-transform: none;
+}
+
+.thmv-wel-text a.btn-outline-light {
+    border-style: dashed;
+}
+
+.thmv-wel-info p {
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.thmv-wel-info .thmv-brand-logo,
+.thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*=====  End Of Welcome To Paradise Section Style  ======*/
+
+/*=============================================
+    =       Rooms & Suites Sectin Style         =
+    =============================================*/
+.thmv-rooms-suites {
+    padding: 200px 10px 0px;
+}
+
+.thmv-rooms-suites .thmv-rooms-info {
+    margin: 20px 0px 50px;
+}
+
+.thmv-rooms-img-slider .slick-list {
+    padding: 0px 0% !important;
+    margin: 0px -20px;
+}
+
+.thmv-rooms-img-slider .slick-slide {
+    margin: 0px 20px;
+}
+
+.thmv-room-view {
+    position: relative;
+}
+
+.thmv-room-view img {
+    width: 100%;
+}
+
+.thmv-room-view .thmv-room-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.thmv-room-view .thmv-room-price p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 0;
+    padding: 10px 30px;
+}
+
+.thmv-rooms-img-slider .thmv-room-info {
+    display: none;
+}
+
+.thmv-rooms-img-slider
+    .slick-active.slick-center
+    + .slick-slide
+    .thmv-room-info {
+    display: none !important;
+}
+
+.thmv-rooms-img-slider .slick-active .thmv-room-info,
+.thmv-rooms-img-slider .slick-current.slick-active .thmv-room-info {
+    display: inline-block;
+}
+
+.thmv-rooms-img-slider .thmv-room-info {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thmv-rooms-img-slider .thmv-room-info h6 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.thmv-rooms-img-slider .thmv-room-info p {
+    margin: 20px 0px;
+}
+
+.thmv-room-info {
+    position: relative;
+}
+
+.thmv-room-info:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 4px;
+    background: #1c1715;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-rooms-img-slider
+    .slick-rooms-slider
+    .slick-slide:hover
+    .thmv-room-info:after {
+    bottom: 0;
+}
+
+/*=====  End Of Rooms & Suites Sectin Style  ======*/
+
+/*=============================================
+    =         About Covid Section Style            =
+    =============================================*/
+.thmv-covid-sec {
+    padding: 150px 10px 120px;
+}
+
+.thmv-covid-sec .thmv-about-covid {
+    border: 5px solid #181818;
+    padding: 65px;
+}
+
+.thmv-covid-sec .thmv-about-covid h2 {
+    font-weight: 700;
+}
+
+.thmv-covid-sec .thmv-about-covid p {
+    margin: 25px 0px;
+}
+
+.thmv-covid-sec .thmv-rules-box {
+    padding: 20px;
+}
+
+.thmv-covid-sec .thmv-rules-box .thmv-border-box,
+.thmv-covid-sec .thmv-promotions-box {
+    border: 2px solid #ffffff50;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.thmv-covid-sec .thmv-rules-box .thmv-border-box h3,
+.thmv-covid-sec .thmv-rules-box .thmv-border-box p {
+    color: #ffffff;
+}
+
+.thmv-covid-sec .thmv-promotions-box {
+    border: 5px solid #181818;
+    padding: 15px;
+}
+
+/*=====  End Of About Covid Section Style  ======*/
+
+/*=============================================
+    =        Our Service Section Style            =
+    =============================================*/
+.thmv-our-service {
+    padding: 150px 10px 50px;
+}
+
+.thmv-our-service .thmv-services {
+    padding-top: 80px;
+}
+
+.thmv-our-service .thmv-services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.thmv-our-service .thmv-services ul li {
+    width: 20%;
+    margin-bottom: 80px;
+}
+
+.thmv-our-service .thmv-services ul li .thmv-services-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thmv-our-service .thmv-services ul li .thmv-services-box img {
+    width: 47px;
+    height: 47px;
+}
+
+.thmv-our-service .thmv-services ul li .thmv-services-box p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.thmv-our-service .thmv-slider-service-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+    padding: 30px;
+    margin: -50px 50px 0px;
+    transition: all 0.3s;
+}
+
+.thmv-our-service .thmv-slider-service-box h5 {
+    margin-bottom: 10px;
+}
+
+.thmv-our-service
+    .thmv-slick-img-slider
+    .slick-active
+    .thmv-slider-service-box {
+    display: block;
+}
+
+/*=============================================
+    =            Slider Text box Animation Style       =
+    =============================================*/
+@-webkit-keyframes fadeInUpSD {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUpSD {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUpSD {
+    -webkit-animation-name: fadeInUpSD;
+    animation-name: fadeInUpSD;
+}
+
+.slick-active .thmv-slider-service-box {
+    -webkit-animation-name: fadeInUpSD;
+    animation-name: fadeInUpSD;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+}
+
+.thmv-our-service hr.thmv-ser-separator {
+    height: 2px;
+    background-color: #878787;
+}
+
+/*=====  End Of Our Service Section Style  ======*/
+
+/*======================================
+    =         Review Section Style            =
+    ======================================*/
+.thmv-review-sec {
+    padding: 150px 10px;
+}
+
+.thmv-service {
+    padding-top: 50px;
+}
+
+.thmv-service-box {
+    text-align: center;
+    min-height: 375px;
+    position: relative;
+}
+
+.thmv-service-box hr {
+    background: #181818;
+    width: 210px;
+    height: 2px;
+    margin: 20px auto;
+    opacity: 1;
+}
+
+.thmv-service-box ul li i {
+    margin: 0px 2px;
+    color: #ffa800;
+}
+
+.thmv-service-box .thmv-rating .thmv-service-text {
+    margin-top: 20px;
+}
+
+.thmv-service-box .thmv-rating {
+    padding: 40px 20px;
+    border: 2px solid #18181810;
+    border-bottom: 0;
+}
+
+.thmv-service-box .thmv-user-info {
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.thmv-service-box .thmv-user-info h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #ffffffff;
+    margin: 0;
+}
+
+.thmv-service-box .thmv-user-info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffffff;
+    margin: 0;
+}
+
+/*=====  End of Review Section Style  ======*/
+
+/*======================================
+    =        Footer Section Style            =
+    ======================================*/
+.thmv-footer {
+    border-top: 1px solid #18181820;
+}
+
+.thmv-footer-sec .thmv-footer-menu {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    justify-content: space-around;
+}
+
+.thmv-footer-sec .thmv-footer-menu ul li {
+    margin-bottom: 35px;
+}
+
+.thmv-footer-sec .thmv-footer-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.thmv-footer-sec {
+    padding: 90px 10px;
+}
+
+.thmv-footer-sec .thmv-about h6 {
+    margin-bottom: 10px;
+}
+
+.thmv-footer-sec .thmv-about p {
+    font-size: 14px;
+}
+
+.thmv-footer-sec .thmv-footer-menu {
+    display: flex;
+}
+
+.thmv-footer-sec .thmv-footer-social h6 {
+    margin-bottom: 25px;
+}
+
+.thmv-footer-sec .thmv-footer-social a.btn-outline {
+    margin-top: 25px;
+    min-width: 100%;
+}
+
+/*----------  Bottom Footre Section  ----------*/
+.thmv-footer .thmv-bottom-footer {
+    padding: 15px 10px;
+}
+
+.thmv-footer .thmv-bottom-footer a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.thmv-footer .thmv-bottom-footer .thmv-payment i {
+    color: #ffffff;
+    font-size: 27px;
+    margin-top: 4px;
+    margin-left: 30px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.thmv-footer .thmv-bottom-footer a:hover,
+.thmv-footer .thmv-bottom-footer .thmv-payment i:hover {
+    opacity: 1;
+}
+
+/*=====  End Of Footer Section Style   ======*/
+
+/*========================================================
+    =            Right Side Floting Buttons Section Style            =
+    ========================================================*/
+.datepick-popup {
+    z-index: 1060;
+}
+
+.thmv-home-side {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translate(-20%, -50%);
+    z-index: 999;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    z-index: -10;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.thmv-home-side-show {
+    opacity: 1;
+    z-index: 10;
+}
+
+.thmv-home-side-show #home-top,
+#home-top {
+    display: flex !important;
+}
+
+#home-top,
+#home-top:hover,
+#home-top:active,
+#home-top:visited {
+    color: #000;
+}
+
+.thmv-calendar-sticky,
+.thmv-backto-top-sticky,
+.thmv-messenger-sticky {
+    margin-bottom: 30px;
+}
+
+.thmv-calendar-sticky {
+    background: #1c1715;
+    color: #fff;
+    width: 83px;
+    height: 83px;
+    border-radius: 100%;
+    font-size: 32px;
+    box-shadow: 0px 14px 20px rgba(118, 118, 118, 0.35);
+}
+
+.thmv-backto-top-sticky {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.thmv-backto-top-sticky i {
+    font-size: 32px;
+}
+
+.thmv-messenger-sticky:hover i {
+    transform: rotate(360deg);
+}
+
+.thmv-messenger-sticky i {
+    font-size: 56px;
+    color: #4a78ef;
+    transition: all 0.5s;
+}
+
+/*----------  Right side floting buttons Section Style  ----------*/
+.thmv-home-floting-btn .thmv-calendar-sticky,
+.thmv-rooms-floting-btn .thmv-backto-top-sticky {
+    display: none;
+}
+
+/*=====  End of Right Side Floting Buttons Section Style  ======*/
+
+/*===================================
+    =        Booking Popup Style            =
+    ===================================*/
+.book_popup .modal-content {
+    background: #1c1715;
+    border: none;
+}
+
+.book_popup.modal {
+    background: #1c1715;
+}
+
+.book_popup .modal-header {
+    border-bottom: none;
+}
+
+.modal_form_title h4 {
+    color: #fff;
+    text-transform: inherit;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    line-height: 39px;
+    margin-bottom: 22px;
+}
+
+.book_popup .btn-close {
+    box-sizing: content-box;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.25em 0.25em;
+    color: #000;
+    background: transparent url("../images/model-close-icon.png");
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: 1;
+    background-size: cover;
+}
+
+.thmv-mo-check-form input {
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 0;
+    color: #fff;
+    height: 50px;
+}
+
+.thmv-mo-check-form input::placeholder {
+    color: #ffffff;
+}
+
+.thmv-mo-check-form input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.thmv-mo-check-form input::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.thmv-mo-check-form .form-group {
+    position: relative;
+}
+
+.thmv-mo-check-form input {
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 0;
+    color: #fff;
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.thmv-mo-check-form .form-group i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.thmv-mo-guest-col .form-content {
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.thmv-mo-guest-col .dropdown-toggle::after {
+    display: none;
+}
+
+.thmv-mo-guest-col .form-content {
+    border: 1px solid #333;
+    color: #fff;
+    line-height: 36px;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.thmv-mo-peoples-icon {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    right: 15px;
+    transform: translate(0px, -50%);
+}
+
+.btn_mo_search {
+    background: #fff;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.thmv-room_head_title {
+    background: #1c1715;
+    min-height: 320px;
+    position: relative;
+    z-index: 1;
+}
+
+.thmv-room_head_title:after {
+    content: "room";
+    font-size: 278px;
+    line-height: 290px;
+    right: 0;
+    position: absolute;
+    color: #322e2c;
+    letter-spacing: -0.02em;
+    z-index: -1;
+    top: 0;
+}
+
+.thmv-subpage-title h2 {
+    font-size: 44px;
+    color: #fff;
+    line-height: 57px;
+    padding: 80px 0px 20px;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+
+/*=====  End Of Booking Popup Style  ======*/
+
+/*==============================================
+    =            Room Listing One Column V1 Sectin Style            =
+    ==============================================*/
+.thmv-room_list_sec,
+.thmv-room-listv2-sec,
+.thmv-room-listv3-sec {
+    padding-bottom: 150px;
+}
+
+.thmv-list-box {
+    margin-bottom: 30px;
+    max-width: 710px;
+}
+
+.thmv-first-list {
+    z-index: 1;
+    position: relative;
+    margin-top: -50px;
+}
+
+.thmv-listimg {
+    position: relative;
+}
+
+.thmv-listimg-top h5 {
+    font-size: 14px;
+    line-height: 18px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 67px;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.thmv-listimg-from h4,
+.thmv-see-all-package.thmv-two-col-roomlist-v1 .thmv-listimg-from h4 {
+    font-size: 20px;
+    line-height: 26px;
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    text-align: center;
+    padding: 17px 5px;
+    text-transform: capitalize;
+}
+
+.thmv-listroom-info {
+    border-bottom: 1px solid rgb(135 135 135 / 20%);
+    padding: 15px 0;
+}
+
+.thmv-listroom-detail p.thmv-queenbed {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.thmv-listroom-servicec li img {
+    width: 20px;
+    opacity: 0.4;
+}
+
+.thmv-listroom-servicec li {
+    margin-right: 25px;
+}
+
+.thmv-listroom-servicec li:last-child {
+    margin-right: 0;
+}
+
+.thmv-listroom-detail {
+    padding-top: 20px;
+}
+
+.thmv-listroom-detail h5,
+.thmv-room-card .thmv-listroom-info h5 {
+    font-weight: 400;
+}
+
+.thmv-listroom-detail p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.thmv-listroom-detail .read-more-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*----------  Pagination CSS style  ----------*/
+.thmv-room-pagination {
+    margin-top: 50px;
+}
+
+.thmv-room-pagination .page-link {
+    border: none;
+    padding: 5px 16px;
+    color: #1c1715;
+    font-weight: 700;
+}
+
+.thmv-room-pagination .page-item {
+    margin: 0px 5px;
+}
+
+.thmv-room-pagination .page-item.active .page-link {
+    background-color: #1c1715;
+}
+
+.thmv-room-pagination .page-item:first-child .page-link {
+    border-radius: 0;
+}
+
+.page-item.disabled .page-link {
+    border: 1px solid #aeaeae;
+    border-radius: 0;
+    color: #aeaeae;
+    padding: 4px 21px;
+}
+
+/*----------  Check Availability style  ----------*/
+.thmv-checkavai-form {
+    border: 10px solid #000;
+    margin-top: 75px;
+    padding: 50px 20px;
+    --offset: 9rem;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+}
+
+.thmv-form-availability h5,
+.thmv-extra-services h5 {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.thmv-availability-check .thmv-mo-check-form input::placeholder {
+    color: #1c1715;
+}
+
+.thmv-availability-check .thmv-mo-check-form input:-ms-input-placeholder {
+    color: #1c1715;
+}
+
+.thmv-availability-check .thmv-mo-check-form input::-ms-input-placeholder {
+    color: #1c1715;
+}
+
+.thmv-availability-check .thmv-mo-check-form input {
+    color: #1c1715;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+}
+
+.thmv-availability-check .thmv-mo-check-form .form-group i {
+    color: #1c1715;
+}
+
+.thmv-availability-check .thmv-mo-guest-col .form-content {
+    border: 1px solid #dbdbdb;
+    color: #1c1715;
+    margin-bottom: 20px;
+}
+
+.thmv-criteria_info a {
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.thmv-criteria_info a img {
+    margin-right: 5px;
+}
+
+.thmv-extra-services h5 {
+    margin: 30px 0px 20px;
+}
+
+.thmv-extra-services .thmv-extra-services-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.thmv-services-checkbox .form-check-input,
+.thmv-services-checkbox .form-check {
+    border-radius: 0;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 10px;
+}
+
+.thmv-services-checkbox .form-check-label {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.thmv-services-checkbox .form-check-input:checked {
+    background-color: #1c1715;
+    border-color: #1c1715;
+    background-size: 22px;
+}
+
+.thmv-extra-services .thmv-extra-services-list li .thmv-services-price h6 {
+    font-size: 14px;
+}
+
+.thmv-extra-services .thmv-your-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.thmv-extra-services .thmv-your-price h5 {
+    margin: 0px 0px 30px;
+    font-weight: 700;
+}
+
+/*=====  End of Room Listing One Column V1 Sectin Style  ======*/
+
+/*==============================================
+    =            Room Listing One Column V2 Section Style            =
+    ==============================================*/
+.thmv-room-headv2 {
+    background: url("../images/rooms-v2-top-banner.jpg");
+    min-height: 340px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.thmv-room-headv2:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    position: absolute;
+    width: 42%;
+    height: 340px;
+    left: -6px;
+    top: 0;
+    z-index: -1;
+}
+
+.thmv-room-listv2-sec {
+    padding-top: 70px;
+}
+
+.thmv-subpage-titlev2 h2 {
+    font-size: 38px;
+    line-height: 50px;
+    border-bottom: 5px solid #1c1715;
+    display: inline-block;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+.thmv-subpage-titlev2 p {
+    margin: 20px 0 0;
+}
+
+.thmv-checkavai-formv2 {
+    border-color: #e6e6e6;
+}
+
+/*=====  End of Room Listing One Column V2 Section Style  ======*/
+
+/*======================================
+    =   Room Listing One Column V3 Section Style     =
+    ======================================*/
+.thmv-subpage-titlev3 h2 {
+    font-size: 38px;
+    margin: 80px 0 20px;
+    border-bottom: 1px solid #1c1715;
+    display: inline-block;
+    padding-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+/*=====  End of Room Listing One Column V3 Section Style  ======*/
+
+/*============================================================
+    =            Room Listing Two Columns v1 Sectin Style            =
+    ============================================================*/
+
+.thmv-two-col-roomlist-v1 .thmv-listimg {
+    height: 300px;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listimg img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listimg-from h4 {
+    width: 100px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 5px;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-queenbed,
+.thmv-two-col-roomlist-v1 .thmv-listroom-detail p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-queenbed,
+.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec {
+    width: 100%;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec li img {
+    width: 16px;
+    opacity: 0.4;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec li {
+    margin-right: 18px;
+}
+
+.thmv-two-col-roomlist-v1
+    .thmv-listroom-info
+    .thmv-listroom-servicec
+    li:last-child {
+    margin-right: 0;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-detail h5 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-listroom-detail p {
+    font-weight: 400;
+}
+
+.thmv-two-col-roomlist-v1 .thmv-checkavai-form,
+.thmv-two-col-roomlist-v2 .thmv-checkavai-form {
+    --offset: 7.5rem;
+}
+
+/*=====  End of Room Listing Two Columns v1 Sectin Style  ======*/
+
+/*===================================================================
+    =            Room Listing Card One Columns Section Style            =
+    ===================================================================*/
+.thmv-room-card .thmv-listimg img {
+    height: 440px;
+    object-fit: cover;
+}
+
+.thmv-room-card .thmv-listimg-from h4 {
+    bottom: 20px;
+}
+
+.thmv-room-card .thmv-listroom-info {
+    padding-top: 0;
+}
+
+.thmv-room-card .thmv-listroom-info .thmv-listimg-top h5 {
+    background: #1c1715;
+    color: #fff;
+    position: unset;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.thmv-room-card .thmv-listroom-info h5 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.thmv-room-card .thmv-listroom-detail {
+    padding-top: 5px;
+}
+
+.thmv-room-card .thmv-card-listing-service {
+    position: absolute;
+    bottom: 10px;
+}
+
+.thmv-room-card .thmv-room-pagination {
+    margin-top: 60px;
+}
+
+/*=====  End of Room Listing Card One Columns Section Style  ======*/
+
+/*=============================================
+    =    Room Single v1    =
+    =============================================*/
+.thmv-room-single .thmv-room-info {
+    padding: 0px 22px;
+}
+
+.thmv-header-room-single-v1 .thmv-header-slick .slick-list {
+    padding: 0 24% !important;
+}
+
+.thmv-header-room-single-v1 .thmv-header-slick .slick-slide {
+    margin: 0px 2px;
+    height: 480px;
+}
+
+.thmv-header-room-single-v1 .thmv-header-slick .slick-slide img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+/*----------  Slick Slider Arrow Style  ----------*/
+.slick-prev:before,
+.slick-next:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 60px;
+    color: #1c1715;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+
+.slick-slider .slick-prev:hover:before,
+.slick-slider .slick-next:hover:before {
+    color: #908e8e;
+    cursor: pointer;
+}
+
+.slick-prev:before {
+    content: "\f060";
+}
+
+.slick-next:before {
+    content: "\f061";
+}
+
+.slider .slick-slider {
+    position: relative;
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: #ffffff;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-next:hover {
+    background: #1c1715;
+}
+
+.slick-slider .slick-prev {
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.slick-slider .slick-next {
+    right: 20%;
+    transform: translate(50%, -50%);
+}
+
+.slick-slider .slick-prev:hover::before,
+.slick-slider .slick-next:hover::before {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*----------  Signature Suite Sectin Style  ----------*/
+.thmv-room-single {
+    padding: 85px 10px 130px;
+}
+
+.thmv-separate {
+    margin: 30px 0px 20px;
+    height: 2px;
+    background: #ede8e9;
+    opacity: 1;
+}
+
+.thmv-Signature-title h2 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.thmv-Signature-title p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #908e8e;
+    display: flex;
+    align-items: center;
+}
+
+.thmv-Signature-title p strong {
+    color: #1c1715;
+    margin-right: 6px;
+}
+
+.thmv-Signature-title p .fa-star,
+.thmv-reviews-sec .thmv-user-review .thmv-user-title p i {
+    color: #ffa800;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.thmv-Signature-title p .fa-circle {
+    font-size: 4px;
+    margin: 0px 10px 0px;
+}
+
+.thmv-room-details {
+    padding-right: 60px;
+}
+
+.thmv-room-details .thmv-room-single-info-text {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.thmv-single-services.thmv-nearby-us .thmv-nearby-icon {
+    width: 100%;
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.thmv-single-services.thmv-nearby-us .thmv-nearby-places h6 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.thmv-amenities h5,
+.thmv-price h5,
+.thmv-availability h5,
+.thmv-reviews-sec h5 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.thmv-room-details .thmv-single-services.thmv-nearby-us {
+    margin-bottom: 0;
+}
+
+.thmv-amenities .thmv-amenities-services {
+    display: flex;
+}
+
+.thmv-amenities .thmv-amenities-col {
+    width: 50%;
+}
+
+.thmv-amenities .thmv-amenities-col .thmv-nearby-places {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-amenities .thmv-amenities-col .thmv-nearby-places p {
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.thmv-price h5,
+.thmv-availability h5 {
+    margin-bottom: 20px;
+}
+
+.thmv-price .thmv-price-details {
+    text-align: center;
+}
+
+.thmv-price .thmv-price-details h5,
+.thmv-price .thmv-price-details p {
+    font-size: 14px;
+    max-width: 135px;
+    margin-bottom: 0;
+}
+
+.thmv-price .thmv-price-details h5 {
+    background: #1c1715;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.thmv-price-details.thmv-pricev2-details {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-pricev2-details .thmv-doller-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thmv-pricev2-details .thmv-doller-sign h6 {
+    width: 48px;
+    height: 48px;
+    background: #1c1715;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thmv-pricev2-details .thmv-day-price {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.thmv-pricev2-details .thmv-day-price h5 {
+    background: transparent;
+    color: #1c1715;
+    line-height: 21px;
+}
+
+.thmv-pricev2-details .thmv-day-price p {
+    line-height: 21px;
+    opacity: 0.5;
+}
+
+.thmv-availability-datepik .datepick {
+    border: 0;
+    width: 100% !important;
+}
+
+.thmv-availability-datepik .datepick-cmd-today {
+    display: none;
+}
+
+.thmv-availability-datepik .datepick-month-header {
+    height: 50px;
+    padding: 10px;
+    margin-top: -45px;
+    margin-bottom: 15px;
+}
+
+.thmv-availability-datepik .datepick-month thead {
+    margin-top: 20px !important;
+    border: 0;
+}
+
+.thmv-availability-datepik .datepick-month td {
+    min-width: 40px !important;
+}
+
+.thmv-availability-datepik .datepick-month td a {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.thmv-availability-datepik .datepick-month td .datepick-today {
+    background-color: #f0c0c0;
+    width: 100%;
+}
+
+.thmv-availability-datepik .datepick-month td a.thmv-date-highlightedClass {
+    background: rgb(28 23 21/ 20%);
+}
+
+.datepick-month td .datepick-selected {
+    border: none;
+}
+
+.datepick-month span {
+    padding: 0;
+    margin: 0 auto;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.thmv-availability-datepik .datepick-month td .datepick-selected {
+    background: #0f0f0f;
+}
+
+.thmv-availability .thmv-nearby-us {
+    max-width: 250px;
+    margin-left: auto;
+}
+
+.thmv-availability .thmv-single-services {
+    margin-top: 0;
+}
+
+.thmv-availability .thmv-single-services .thmv-nearby-places h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.thmv-availability .thmv-single-services.thmv-nearby-us ul li {
+    margin-bottom: 0;
+}
+
+.thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon {
+    background: none;
+}
+
+.thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon img {
+    width: 29px;
+    height: 29px;
+}
+
+.thmv-availability .thmv-nearby-us .thmv-nearby-places {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/*----------  Rreviews Section Style  ----------*/
+.thmv-review-row {
+    padding: 20px;
+    border: 1px solid #ede8e9;
+    margin: 30px 0px 40px;
+}
+
+.thmv-reviews-sec .thmv-all-rating .thmv-rating-title h2 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 800;
+}
+
+.thmv-reviews-sec .thmv-all-rating .thmv-rating-title i {
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    color: #ffa800;
+}
+
+.thmv-reviews-sec .thmv-progress-sec {
+    padding-left: 30px;
+    border-left: 1px solid #ede8e9;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(1)
+    .thmv-progress
+    .progress
+    .progress-bar {
+    background-color: #2ac084;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(1)
+    .thmv-progress
+    .progress {
+    background-color: #2ac08420;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(2)
+    .thmv-progress
+    .progress
+    .progress-bar {
+    background-color: #fdf0d5;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(2)
+    .thmv-progress
+    .progress {
+    background-color: #fdf0d520;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(3)
+    .thmv-progress
+    .progress
+    .progress-bar {
+    background-color: #eb5e55;
+}
+
+.thmv-reviews-sec
+    .thmv-progress-sec
+    ul
+    li:nth-child(3)
+    .thmv-progress
+    .progress {
+    background-color: #eb5e5520;
+}
+
+.thmv-reviews-sec .thmv-progress-sec .thmv-progress {
+    width: 70px;
+}
+
+.thmv-reviews-sec .thmv-progress-sec ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.thmv-reviews-sec .thmv-progress-sec ul li:last-child {
+    margin-bottom: 0;
+}
+
+.thmv-reviews-sec .thmv-all-rating p,
+.thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6,
+.thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info p,
+.thmv-reviews-sec .thmv-user-review .thmv-user-text p,
+.thmv-room-single .thmv-room-info h6,
+.thmv-room-single .thmv-room-info p {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+.thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6 {
+    font-weight: 700;
+}
+
+.thmv-reviews-sec .thmv-progress-sec .thmv-progress {
+    text-align: right;
+}
+
+.thmv-reviews-sec .thmv-progress-sec .thmv-progress .progress {
+    height: 4px;
+    margin-top: 5px;
+    transform: rotate(180deg);
+}
+
+.thmv-reviews-sec .thmv-progress-sec .thmv-progress h5,
+.thmv-reviews-sec .thmv-user-review .thmv-user-title h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/*----------  User Review Section Style ----------*/
+.thmv-reviews-sec .thmv-user-review .thmv-user-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thmv-reviews-sec .thmv-user-review .thmv-user-text p {
+    line-height: 28px;
+    margin: 5px 0px 15px;
+}
+
+.thmv-reviews-sec .thmv-user-review .thmv-user-data {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-reviews-sec .thmv-user-data .thmv-user-img img {
+    width: 36px;
+    margin-right: 10px;
+}
+
+.thmv-reviews-sec .thmv-user-data .thmv-user-name h6 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.thmv-reviews-sec .thmv-user-data .thmv-user-name p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.thmv-reviews-sec .thmv-user-review .thmv-review-box {
+    margin-bottom: 40px;
+}
+
+.thmv-reviews-sec .thmv-user-review .thmv-review-box:last-child {
+    margin-bottom: 0;
+}
+
+/*----------  Discount Section Style  ----------*/
+.thmv-side-bar-sticky .thmv-checkavai-form {
+    align-self: unset;
+    top: unset;
+}
+
+.thmv-side-bar-sticky {
+    --offset: 10rem;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+}
+
+.thmv-discount {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.thmv-discount a {
+    font-size: 22px;
+    min-width: 305px;
+    padding: 20px 10px;
+    margin: -150px auto 0px;
+}
+
+/*----------  Room Single Slider  ----------*/
+/* .thmv-room-single .thmv-room-info h5{
+            font-size: 24px;
+            line-height: 31px;
+        }
+        .thmv-room-single .thmv-room-price p{
+            font-size:20px;
+            line-height: 40px;
+            padding: 5px 25px
+        }
+        .thmv-rooms-img-slider .slick-rooms-single-slider .thmv-room-info{
+            display:block;
+        } */
+.thmv-rooms-suites.thmv-room-single-suites {
+    padding: 100px 10px 100px;
+}
+
+.thmv-rooms-suites.thmv-room-single-suites .thmv-sec-title h2 {
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.thmv-single-room-blok .thmv-room-info {
+    padding: 25px 0px;
+}
+
+.thmv-single-room-blok .thmv-room-view .thmv-room-price p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.thmv-single-room-blok .thmv-room-info h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.thmv-single-room-blok .thmv-room-info h6 {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.thmv-single-room-blok .thmv-room-info p {
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.thmv-single-room-blok .thmv-room-info::after {
+    display: none;
+}
+
+.thmv-room-details .thmv-single-services.thmv-nearby-us {
+    margin: 30px 0px 40px;
+}
+
+/*=====  End of Room Single v1  ======*/
+
+/*=============================================
+    =    Room Single v1.2    =
+    =============================================*/
+.thmv-header-room-single-v2 .thmv-header-img img {
+    width: 100%;
+    height: 485px;
+    object-fit: cover;
+}
+
+/*=====  End of Room Single v1.2  ======*/
+
+/*=============================================
+    =    Room Single Modern v2    =
+    =============================================*/
+.thmv-room-modern .thmv-col-2-img {
+    margin-top: 25px;
+}
+
+.thmv-room-modern .thmv-col-2-img .thmv-header-img {
+    position: relative;
+}
+
+.thmv-room-modern .thmv-col-2-img .thmv-show-al-photos {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.thmv-room-modern .thmv-show-al-photos a.btn-full-filled {
+    display: flex;
+    text-transform: capitalize;
+    width: 175px;
+    padding: 15px 15px;
+    color: #908e8e;
+    background:
+        linear-gradient(0deg, rgba(58, 51, 53, 0.04), rgba(58, 51, 53, 0.04)),
+        #ffffff;
+    border: 0;
+    text-align: right;
+}
+
+.thmv-room-modern .thmv-show-al-photos a.btn-full-filled:hover {
+    color: #908e8e;
+    background: #1c1715;
+}
+
+.thmv-room-modern .thmv-show-al-photos a.btn-full-filled img {
+    margin-right: 10px;
+    width: 18px;
+}
+
+.thmv-room-modern .thmv-show-al-photos a.btn-full-filled h6 {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.thmv-room-single.thmv-room-single-modern {
+    padding: 45px 10px 100px;
+}
+
+.thmv-room-single-modern .thmv-room-details .thmv-Signature-v2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* .thmv-room-single-modern .thmv-room-details .thmv-room-details-price{
+        margin-bottom: 10px;
+    } */
+.thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5 {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5 span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #908e8e;
+    text-transform: lowercase;
+}
+
+.thmv-room-single-modern .thmv-single-services ul {
+    display: flex;
+}
+
+.thmv-room-single-modern .thmv-single-services ul li {
+    width: 25%;
+}
+
+.thmv-room-single-modern .thmv-nearby-us ul li:last-child {
+    margin-bottom: 20px;
+}
+
+/* about */
+.thmv-room-single-modern .thmv-single-about {
+    margin-top: 40px;
+}
+
+.thmv-room-single-modern .thmv-single-about h5 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.thmv-room-single-modern .thmv-single-about .thmv-paragraph,
+.thmv-room-single-modern .thmv-single-about .thmv-paragraph p {
+    margin-top: 30px;
+}
+
+.thmv-room-single-modern .thmv-single-about .thmv-paragraph p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-nearby-icon {
+    background: transparent;
+    min-width: 38px;
+    min-height: 38px;
+    justify-content: flex-start;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-single-services ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-single-services ul li {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places {
+    margin-left: 0;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places {
+    justify-content: flex-start;
+}
+
+.thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places p {
+    opacity: 1;
+}
+
+.thmv-room-single-modern .thmv-single-services ul li {
+    margin-bottom: 10px;
+}
+
+.thmv-modern-full-img {
+    margin-bottom: 100px;
+}
+
+.thmv-apartments {
+    padding: 150px 10px 100px;
+}
+
+.thmv-apartments-rates .thmv-apartments-info h6 {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.thmv-apartments-rates .thmv-apartments-info p,
+.thmv-apartments-rates .thmv-apartments-date p {
+    margin-bottom: 0px;
+    line-height: 18px;
+}
+
+.thmv-apartments-rates {
+    margin-top: 30px;
+}
+
+.thmv-modern-review .slick-slide .thmv-service-box .thmv-rating img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.thmv-modern-nearby {
+    padding: 0px 10px 140px;
+}
+
+.thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo {
+    margin: 40px 0px 20px;
+}
+
+.thmv-rooms-suites.thmv-modern-room-single {
+    background: #f7f7f7;
+    padding: 200px 0px 100px;
+}
+
+/*=====  End of Room Single v2  ======*/

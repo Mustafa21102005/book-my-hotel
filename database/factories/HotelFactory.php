@@ -46,8 +46,16 @@ class HotelFactory extends Factory
      */
     public function configure()
     {
-        return $this->afterCreating(function (Hotel $hotel) {
-            $hotel->addMediaFromUrl('https://picsum.photos/800/600')
+        $images = [
+            'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+            'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800',
+            'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800',
+            'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800',
+            'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800',
+        ];
+
+        return $this->afterCreating(function (Hotel $hotel) use ($images) {
+            $hotel->addMediaFromUrl(fake()->randomElement($images))
                 ->toMediaCollection('hotel-img');
         });
     }

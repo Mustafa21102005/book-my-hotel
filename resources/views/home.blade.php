@@ -291,7 +291,7 @@
                     @endphp
                     <div class="thmv-img-gray-hover">
                         <div class="thmv-room-view position-relative">
-                            <img src="{{ $room_image }}">
+                            <img src="{{ $room_image }}" class="room-image">
 
                             <div class="thmv-room-price thmv-bg-glass">
                                 <p>AED {{ $room->price }}</p>

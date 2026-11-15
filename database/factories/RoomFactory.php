@@ -42,8 +42,17 @@ class RoomFactory extends Factory
      */
     public function configure()
     {
-        return $this->afterCreating(function (Room $room) {
-            $room->addMediaFromUrl('https://picsum.photos/600/400')
+
+        $images = [
+            'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop',
+        ];
+
+        return $this->afterCreating(function (Room $room) use ($images) {
+            $room->addMediaFromUrl(fake()->randomElement($images))
                 ->toMediaCollection('room-img');
         });
     }
